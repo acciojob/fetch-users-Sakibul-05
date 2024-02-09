@@ -41,7 +41,7 @@ const App = () => {
           </thead>
           <tbody>
             {users.length === 0 ? (
-              <p className="messege">"No data found to display"</p>
+              <p className="messege">No data found to display.</p>
             ) : (
               <>
                 {users.map((user) => (
