@@ -24,7 +24,7 @@ const App = () => {
     <div>
       {/* Do not remove the main div */}
       <div className="companyNameAndGetUserBtn">
-        <h2>Blue Whales</h2>
+        <h2>Blue Whales App</h2>
         <button className="btn" disabled={isDisabled} onClick={() => getUser()}>
           Get User List
         </button>
@@ -42,13 +42,9 @@ const App = () => {
           <tbody>
             {users.length === 0 ? (
               <>
-                <tr>
-                  <td colSpan="4" style={{ border: "none", padding: 0 }}>
-                    <p className="messege">
-                      {error ? error : "No data found to display"}
-                    </p>
-                  </td>
-                </tr>
+                <p className="messege">
+                  {error ? error : "No data found to display"}
+                </p>
               </>
             ) : (
               <>
