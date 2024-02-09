@@ -1,1 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
 
+.companyNameAndGetUserBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.btn {
+  background-color: #06a6be;
+  color: #ffff;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #10798a;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+p.messege {
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  height: 2.5rem;
+  background-color: #2b3135;
+  color: #ffff;
+}
+th,
+td {
+  text-align: start;
+}
+
+td img {
+  width: 4rem;
+}
+td {
+  border-bottom: 1px solid grey;
+  padding: 1rem 0 1rem 0;
+  vertical-align: top;
+}
