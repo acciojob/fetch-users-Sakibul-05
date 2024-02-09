@@ -41,7 +41,15 @@ const App = () => {
           </thead>
           <tbody>
             {users.length === 0 ? (
-              <p className="messege">No data found to display.</p>
+              <>
+                <tr>
+                  <td colSpan="4" style={{ border: "none", padding: 0 }}>
+                    <p className="messege">
+                      {error ? error : "No data found to display."}
+                    </p>
+                  </td>
+                </tr>
+              </>
             ) : (
               <>
                 {users.map((user) => (
